@@ -28,7 +28,7 @@ class Home extends React.Component {
                 </div>
                 <div className="step">
                   <div className="number">02</div>
-                  <div className="text">Subscribe or Don't</div>
+                  <div className="text">{"Subscribe or Don't"}</div>
                 </div>
                 <div className="step">
                   <div className="number">03</div>

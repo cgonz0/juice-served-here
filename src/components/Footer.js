@@ -10,7 +10,7 @@ class Footer extends React.Component {
         <div className="container">
          <div className="footer-1">
             <div className="subscribe">
-              <p>Let's be friends with benefits</p>
+              <p>{"Let's be friends with benefits"}</p>
               <form>
                 <input type="email" className="email" required="required" placeholder="Email Address" />
                 <input type="submit" className="submit" value="Ok!" />
