@@ -11,14 +11,16 @@ class Footer extends React.Component {
          <div className="footer-1">
             <div className="subscribe">
               <p>Let's be friends with benefits</p>
-              <input type="email" className="email" required="required" placeholder="Email Address" />
-              <input type="submit" className="submit" value="Ok!" />
+              <form>
+                <input type="email" className="email" required="required" placeholder="Email Address" />
+                <input type="submit" className="submit" value="Ok!" />
+              </form>
             </div>
 
             <div className="footerNav">
               <div className="footerList">
                 <ul>
-                  <li><a href="#/" span className="listHeader">Company</a></li>
+                <li span className="listHeader">Company</li>
                   <li><a href="#/">Find Stores</a></li>
                   <li><a href="#/">Our Story</a></li>
                   <li><a href="#/">Our Juice</a></li>
@@ -30,7 +32,7 @@ class Footer extends React.Component {
 
               <div className="footerList">
                 <ul>
-                  <li><a href="#/" span className="listHeader">Help</a></li>
+                <li span className="listHeader">Help</li>
                   <li><a href="#/">FAQ</a></li>
                   <li><a href="#/">Shipping</a></li>
                   <li><a href="#/">Return Policy</a></li>
@@ -41,7 +43,7 @@ class Footer extends React.Component {
               </div>
               <div className="footerList">
                 <ul>
-                  <li><a href="#/" span className="listHeader">Social</a></li>
+                  <li span className="listHeader">Social</li>
                   <li><a href="#/">Instagram</a></li>
                   <li><a href="#/">Twitter</a></li>
                   <li><a href="#/">Facebook</a></li>

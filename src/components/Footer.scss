@@ -13,30 +13,35 @@
         text-transform: uppercase;
         text-align: left;
       }
-      input[type="email"] {
-        margin-right: 10px;
-        height: 40px;
-        width: 280px;
-        padding-left: 10px;
-        box-sizing: border-box;
-        &::placeholder {
-          font-family: 'Abel', sans-serif;
-          font-size: 16px;
-          color: $darkgray;
+      form {
+        display: flex;
+        input[type="email"] {
+          margin-right: 10px;
+          height: 40px;
+          width: 280px;
+          padding-left: 10px;
+          box-sizing: border-box;
+          &::placeholder {
+            font-family: 'Abel', sans-serif;
+            font-size: 16px;
+            color: $darkgray;
+          }
         }
-      }
-      .submit {
-        font-family: 'Abel', sans-serif;
-        height: 39px;
-        border: 1px solid $orange;
-        font-size: 16px;
-        text-transform: uppercase;
-        padding: 0 40px;
-        color: $orange;
-        font-weight: bold;
-        cursor: pointer;
-        &:hover {
-          background-color: rgba(255,94,72, .1);
+        .submit {
+          font-family: 'Abel', sans-serif;
+          background: none;
+          height: 40px;
+          border: 1px solid $orange;
+          font-size: 16px;
+          text-transform: uppercase;
+          padding: 0 40px;
+          color: $orange;
+          font-weight: bold;
+          box-sizing: border-box;
+          cursor: pointer;
+          &:hover {
+            background-color: rgba(255,94,72, .1);
+          }
         }
       }
     }
