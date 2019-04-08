@@ -20,7 +20,7 @@ class Footer extends React.Component {
             <div className="footerNav">
               <div className="footerList">
                 <ul>
-                <li span className="listHeader">Company</li>
+                  <li className="listHeader">Company</li>
                   <li><a href="#/">Find Stores</a></li>
                   <li><a href="#/">Our Story</a></li>
                   <li><a href="#/">Our Juice</a></li>
@@ -32,7 +32,7 @@ class Footer extends React.Component {
 
               <div className="footerList">
                 <ul>
-                <li span className="listHeader">Help</li>
+                  <li className="listHeader">Help</li>
                   <li><a href="#/">FAQ</a></li>
                   <li><a href="#/">Shipping</a></li>
                   <li><a href="#/">Return Policy</a></li>
@@ -43,7 +43,7 @@ class Footer extends React.Component {
               </div>
               <div className="footerList">
                 <ul>
-                  <li span className="listHeader">Social</li>
+                  <li className="listHeader">Social</li>
                   <li><a href="#/">Instagram</a></li>
                   <li><a href="#/">Twitter</a></li>
                   <li><a href="#/">Facebook</a></li>

@@ -9,7 +9,7 @@ class Dropdown extends React.Component {
         <div className="dropdownNav">
           <div className="dropdownList">
             <ul>
-              <li span className="listHeader">Drinks</li>
+              <li className="listHeader">Drinks</li>
               <li><a href="#/">All</a></li>
               <li><a href="#/">Juices</a></li>
               <li><a href="#/">Smoothies</a></li>
@@ -21,7 +21,7 @@ class Dropdown extends React.Component {
           </div>
           <div className="dropdownList">
             <ul>
-            <li span className="listHeader">Goods</li>
+              <li className="listHeader">Goods</li>
               <li><a href="#/">All</a></li>
               <li><a href="#/">Teas</a></li>
               <li><a href="#/">Coffees</a></li>
@@ -31,7 +31,7 @@ class Dropdown extends React.Component {
           </div>
           <div className="dropdownList">
             <ul>
-            <li span className="listHeader">Boxes</li>
+              <li className="listHeader">Boxes</li>
               <li><a href="#/">All</a></li>
               <li><a href="#/">Favorite Boxes</a></li>
               <li><a href="#/">Sweet Cream Box</a></li>
@@ -41,7 +41,7 @@ class Dropdown extends React.Component {
           </div>
           <div className="dropdownList">
             <ul>
-            <li span className="listHeader">Cleanses</li>
+              <li className="listHeader">Cleanses</li>
               <li><a href="#/">All</a></li>
               <li><a href="#/">Soft Cleanse</a></li>
               <li><a href="#/">Semi Cleanse</a></li>
