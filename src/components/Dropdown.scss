@@ -1,0 +1,33 @@
+@import '../styles/_variables.scss';
+
+.dropdown {
+  position: absolute;
+  top: 118px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid $dividergray;
+}
+
+.dropdownNav {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  padding-left: 100px;
+  .listHeader {
+    text-transform: uppercase;
+  }
+  ul {
+    list-style: none;
+    li {
+      line-height: 2.5rem;
+    }
+  }
+  .navImage {
+    height: 333px;
+    width: 324px;
+    background-image: url(../assets/nav-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+}

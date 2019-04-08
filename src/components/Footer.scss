@@ -1,0 +1,88 @@
+@import '../styles/_variables.scss';
+
+.footer {
+  border-top: 1px solid $dividergray;
+  margin-top: 40px;
+  padding-top: 30px;
+  .footer-1 {
+    display: flex;
+    justify-content: space-evenly;
+    .subscribe {
+      p {
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: left;
+      }
+      input[type="email"] {
+        margin-right: 10px;
+        height: 40px;
+        width: 280px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        &::placeholder {
+          font-family: 'Abel', sans-serif;
+          font-size: 16px;
+          color: $darkgray;
+        }
+      }
+      .submit {
+        font-family: 'Abel', sans-serif;
+        height: 39px;
+        border: 1px solid $orange;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 0 40px;
+        color: $orange;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(255,94,72, .1);
+        }
+      }
+    }
+    .footerNav {
+      display: flex;
+      text-align: left;
+      justify-content: space-between;
+      .listHeader {
+        text-transform: uppercase;
+      }
+      ul {
+        list-style: none;
+        padding-right: 30px;
+        li {
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+  .footer-2 {
+    background-color: $lightgray;
+    border-top: 1px solid $dividergray;
+    .container {
+      padding: 10px 30px;
+      .footerInfo {
+        font-size: 14px;
+        color: $darkgray;
+        display: flex;
+        justify-content: space-between;
+        span {
+          text-transform: uppercase;
+        }
+        ul {
+          list-style: none;
+          li {
+            display: inline-block;
+            margin: 0 10px;
+            a {
+              color: $darkgray;
+              &:hover {
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

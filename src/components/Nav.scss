@@ -1,0 +1,59 @@
+@import '../styles/_variables.scss';
+
+.mainNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 30px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  &:hover {
+  color: $orange;
+  }
+}
+
+li.logoComp {
+  padding: 0 30px;
+  img.logo {
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+    height: 2rem;
+  }
+  span.juice {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  span.served {
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    top: -4px;
+  }
+}
+
+.cart {
+  font-family: 'Abel', sans-serif;
+}
+
+
+
+
+
+
+

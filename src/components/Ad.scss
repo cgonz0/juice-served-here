@@ -1,0 +1,19 @@
+@import '../styles/_variables.scss';
+
+.pencilAd {
+  background-color: $black;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: $white;
+    margin-left: 5px;
+    &:hover {
+      color: $white;
+    }
+  }
+}

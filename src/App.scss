@@ -1,0 +1,51 @@
+@import './styles/_variables.scss';
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+  letter-spacing: .5px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.btn-fill {
+  font-family: 'Abel', sans-serif;
+  background-color: $orange;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  cursor: pointer;
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.btn-outline {
+  font-family: 'Abel', sans-serif;
+  background: none;
+  border: 1px solid $orange;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $orange;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255,94,72, .1);
+  }
+}
