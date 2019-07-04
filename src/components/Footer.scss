@@ -6,8 +6,13 @@
   padding-top: 30px;
   .footer-1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
     .subscribe {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       p {
         font-size: 18px;
         text-transform: uppercase;
@@ -15,10 +20,14 @@
       }
       form {
         display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        width: 100%;
         input[type="email"] {
           margin-right: 10px;
           height: 40px;
-          width: 280px;
+          width: 100%;
+          // max-width: 400px;
           padding-left: 10px;
           box-sizing: border-box;
           &::placeholder {
@@ -48,7 +57,8 @@
     .footerNav {
       display: flex;
       text-align: left;
-      justify-content: space-between;
+      justify-content: center;
+      width: 100%;
       .listHeader {
         text-transform: uppercase;
       }
@@ -87,6 +97,24 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    .footer-1 {
+      .subscribe {
+        width: 50%;;
+        align-items: flex-start;
+        form {
+          justify-content: flex-start;
+        }
+      }
+      .footerNav {
+        width: auto;
+        justify-content: space-between;
       }
     }
   }

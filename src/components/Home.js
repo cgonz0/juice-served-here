@@ -11,6 +11,7 @@ class Home extends React.Component {
       <div>
         <div class="deliverySection">
           <div className="deliveryHero">
+          <div className="colorOverlay"></div>
             <div class="container">
               <h1>We ship overnight nationwide</h1>
               <h4>We deliver Tuesday–Friday and have the ability to schedule ahead.</h4>
@@ -22,20 +23,34 @@ class Home extends React.Component {
               <h2>You buy it by the box</h2>
               <p>Choose 7–8 products of your liking and have it delivered to your door as often as you want. You pick, every time.</p>
               <div className="stepSection">
-                <div className="step">
-                  <div className="number">01</div>
-                  <div className="text">Build Your Box</div>
-                </div>
-                <div className="step">
-                  <div className="number">02</div>
-                  <div className="text">{"Subscribe or Don't"}</div>
-                </div>
-                <div className="step">
-                  <div className="number">03</div>
-                  <div className="text">Pick a Delivery Day</div>
+                <div className="stepWrapper">
+                  <div className="step">
+                    <div className="number">01</div>
+                    <div className="text">
+                      Build Your Box
+                    <span className="border"></span>
+                    <span className="subtext">Choose your favorites</span>
+                    </div>
+                  </div>
+                  <div className="step">
+                    <div className="number">02</div>
+                    <div className="text">
+                      {"Subscribe or Don't"}
+                      <span className="border"></span>
+                      <span className="subtext">Save when you do</span>
+                    </div>
+                  </div>
+                  <div className="step">
+                    <div className="number">03</div>
+                    <div className="text">
+                      Pick a Delivery Day
+                      <span className="border"></span>
+                      <span className="subtext">We ship overnight</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <button className="btn-fill">Shop the Menu</button>
+              <button className="btn-outline">Shop the Menu</button>
             </div>
           </div>
         </div>
@@ -46,7 +61,7 @@ class Home extends React.Component {
               <h1>Drinks</h1>
               <h2>Juices</h2>
               <p>Our juices are individually crafted to flush, detoxify, hydrate and strengthen the body.</p>
-              <button className="btn-outline">View Juice Menu</button>
+              <button className="btn-fill">View Juice Menu</button>
             </div>
           </div>
           <div className="drinksProducts">
@@ -59,7 +74,7 @@ class Home extends React.Component {
                       <div className="thumb">
                         <img src={juice1} className="juice-1" alt="juice-1" />
                         <div className="overlay">
-                          <p className="imgText">View Menu</p>
+                          <p className="imgText">View Lemonade Menu</p>
                         </div>
                       </div>
                     </a>
@@ -70,7 +85,7 @@ class Home extends React.Component {
                       <div className="thumb">
                         <img src={juice2} className="juice-2" alt="juice-2" />
                         <div className="overlay">
-                          <p className="imgText">View Menu</p>
+                          <p className="imgText">View Milk Menu</p>
                         </div>
                       </div>
                     </a>
@@ -81,7 +96,7 @@ class Home extends React.Component {
                       <div className="thumb">
                         <img src={juice3} className="juice-3" alt="juice-3" />
                         <div className="overlay">
-                          <p className="imgText">View Menu</p>
+                          <p className="imgText">View Juice Menu</p>
                         </div>
                       </div>
                     </a>
@@ -92,13 +107,13 @@ class Home extends React.Component {
                       <div className="thumb">
                         <img src={juice4} className="juice-4" alt="juice-4" />
                         <div className="overlay">
-                          <p className="imgText">View Menu</p>
+                          <p className="imgText">View Smoothies Menu</p>
                         </div>
                       </div>
                     </a>
                   </li>
                 </ul>
-                <button className="btn-outline">View Juice Menu</button>
+                <button className="btn-outline">View Drinks Menu</button>
               </div>
           </div>
         </div>

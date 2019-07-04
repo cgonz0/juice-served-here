@@ -56,7 +56,7 @@ class Footer extends React.Component {
           <div className="footer-2">
             <div className="container">
               <div className="footerInfo">
-                <p>© 2019. Juice Served Here. <span>Never Conventional.</span> All Right Reserved.</p>
+                <p>© 2019. Juice Served Here. <span>Never Conventional.</span> All Rights Reserved.</p>
                 <ul>
                   <li><a href="#/">Privacy Policy</a></li>
                   <li><a href="#/">Terms & Conditions</a></li>

@@ -28,9 +28,10 @@ html,
   color: white;
   margin-bottom: 20px;
   padding: 15px 40px;
+  transition: all 0.25s ease-in-out;
   cursor: pointer;
   &:hover {
-    opacity: .9;
+    background-color: #ff7f6e;
   }
 }
 
@@ -44,6 +45,7 @@ html,
   color: $orange;
   margin-bottom: 20px;
   padding: 15px 40px;
+  transition: all 0.25s ease-in-out;
   cursor: pointer;
   &:hover {
     background-color: rgba(255,94,72, .1);
