@@ -39,7 +39,7 @@ class Nav extends React.Component {
 
   render() {
     return(
-      <div>
+      <div onMouseEnter = {this.handleOpen} onMouseLeave = {this.handleClose}>
         <nav className={this.state.scroll > this.state.top ? "mainNav fixed-nav" : "mainNav"}>
 
           <div className="mainNav-mobile">
@@ -53,10 +53,7 @@ class Nav extends React.Component {
           <div className="mainNav-lg">
             <a href="#/">Log in</a>
               <ul>
-                <li
-                onMouseEnter = {this.handleOpen} onMouseLeave = {this.handleClose}
-                >
-                <a href="#/">Shop</a></li>
+                <li><a href="#/">Shop</a></li>
                 <li><a href="#/">Cleanses</a></li>
                 <li><a href="#/">Build a Box</a></li>
                 <li className="logoComp"><a href="#/"><img src={logo} className="logo" alt="logo" /></a><span className="juice">JUICE </span><span className="served">Served Here</span></li>
