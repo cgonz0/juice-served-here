@@ -9,17 +9,17 @@ class Home extends React.Component {
   render() {
     return(
       <div>
-        <div class="deliverySection">
+        <div className="deliverySection">
           <div className="deliveryHero">
           <div className="colorOverlay"></div>
-            <div class="container">
+            <div className="container">
               <h1>We ship overnight nationwide</h1>
               <h4>We deliver Tuesday–Friday and have the ability to schedule ahead.</h4>
-              <button class="btn-fill">View Menu</button>
+              <button className="btn-fill">View Menu</button>
             </div>
           </div>
           <div className="box">
-            <div class="container">
+            <div className="container">
               <h2>You buy it by the box</h2>
               <p>Choose 7–8 products of your liking and have it delivered to your door as often as you want. You pick, every time.</p>
               <div className="stepSection">
@@ -65,6 +65,7 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="drinksProducts">
+            <div className="container">
               <h2>Pick your pleasure</h2>
               <p>Our products are nourishing, satiating and never cut with cheap filters</p>
               <div className="products">
@@ -79,7 +80,6 @@ class Home extends React.Component {
                       </div>
                     </a>
                   </li>
-
                    <li>
                     <a href="#/">
                       <div className="thumb">
@@ -90,7 +90,6 @@ class Home extends React.Component {
                       </div>
                     </a>
                   </li>
-
                    <li>
                     <a href="#/">
                       <div className="thumb">
@@ -101,7 +100,6 @@ class Home extends React.Component {
                       </div>
                     </a>
                   </li>
-
                    <li>
                     <a href="#/">
                       <div className="thumb">
@@ -115,10 +113,11 @@ class Home extends React.Component {
                 </ul>
                 <button className="btn-outline">View Drinks Menu</button>
               </div>
+            </div>
           </div>
         </div>
       </div>
-     );
+    );
   }
 }
 

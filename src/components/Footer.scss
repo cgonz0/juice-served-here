@@ -47,6 +47,7 @@
           color: $orange;
           font-weight: bold;
           box-sizing: border-box;
+          transition: all 0.25s ease-in-out;
           cursor: pointer;
           &:hover {
             background-color: rgba(255,94,72, .1);
@@ -57,14 +58,14 @@
     .footerNav {
       display: flex;
       text-align: left;
-      justify-content: center;
+      justify-content: space-between;
       width: 100%;
       .listHeader {
         text-transform: uppercase;
       }
       ul {
         list-style: none;
-        padding-right: 30px;
+        padding: 0px;
         li {
           line-height: 2.5rem;
         }
@@ -114,7 +115,10 @@
       }
       .footerNav {
         width: auto;
-        justify-content: space-between;
+        margin-left: 10px;
+        ul {
+          padding-right: 35px;
+        }
       }
     }
   }
