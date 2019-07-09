@@ -3,8 +3,11 @@
 .mainNav {
   z-index: 1;
   background-color: white;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid $dividergray;
   top: 0;
+  ul {
+    list-style: none;
+  }
 }
 
 .fixed-nav {
@@ -29,7 +32,6 @@ a {
 .mainNav-lg {
   display: none;
   ul {
-    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +49,7 @@ a {
   padding: 0 30px;
   ul {
     margin: 10px;
+    padding: 0px;
   }
 }
 

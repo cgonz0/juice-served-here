@@ -1,33 +1,43 @@
 @import '../styles/_variables.scss';
 
 .dropdown {
-  top: 0px;
-  width: 100%;
-  background-color: white;
-  border: 1px solid $dividergray;
-  z-index: 1;
+  display: none;
 }
 
-.dropdownNav {
-  display: flex;
-  text-align: left;
-  justify-content: space-between;
-  padding-left: 100px;
-  .listHeader {
-    text-transform: uppercase;
+@media screen and (min-width: 1200px) {
+  .dropdown {
+    display: block;
+    top: 0px;
   }
-  ul {
-    list-style: none;
-    li {
-      line-height: 2.5rem;
+
+  .dropdownNav {
+    border: 1px solid $dividergray;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding-left: 100px;
+    .listHeader {
+      text-transform: uppercase;
     }
-  }
-  .navImage {
-    height: 333px;
-    width: 324px;
-    background-image: url(../assets/nav-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
+    ul {
+      list-style: none;
+      li {
+        line-height: 2.5rem;
+      }
+    }
+    .navImage {
+      width: 420px;
+      height: 355px;
+      position: relative;
+      overflow: hidden;
+      img {
+        transform: translate(-32%, 0%);
+        width: 120%;
+      }
+    }
   }
 }

@@ -8,7 +8,7 @@ import juice4 from '../assets/juice-4.jpg';
 class Home extends React.Component {
   render() {
     return(
-      <div>
+      <div className="mainWrap">
         <div className="deliverySection">
           <div className="deliveryHero">
           <div className="colorOverlay"></div>

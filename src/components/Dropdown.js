@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dropdown.scss';
+import navImage from '../assets/nav-image.jpg';
 
 class Dropdown extends React.Component {
 
@@ -48,7 +49,9 @@ class Dropdown extends React.Component {
               <li><a href="#/">Hard Cleanse</a></li>
             </ul>
           </div>
-          <div className="navImage"></div>
+          <div className="navImage">
+           <img src={navImage} alt="daliy ritual" />
+          </div>
         </div>
       </div>
     );
