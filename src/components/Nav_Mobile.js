@@ -52,14 +52,13 @@ class NavMobile extends React.Component {
   }
 
   render() {
-        let menuStatus = this.state.isOpen ? 'isopen' : '';
-
+        let menuStatus = this.state.isOpen ? 'isOpen' : '';
     return (
       <div className="anotherdiv" ref="root">
-
-        <div className="menubar" onClick={ this._menuToggle } >
+        {this.state.isOpen ? document.body.classList.add('navOpen') : document.body.classList.remove('navOpen')}
+        <div className="menuBar" onClick={ this._menuToggle } >
           <div id="bars" className={ menuStatus }>
-            <a href="#/"><i class="fas fa-bars"></i></a>
+            <a href="#/"><i className="fas fa-bars"></i></a>
           </div>
         </div>
 

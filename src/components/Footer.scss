@@ -27,9 +27,9 @@
           margin-right: 10px;
           height: 40px;
           width: 100%;
-          // max-width: 400px;
           padding-left: 10px;
           box-sizing: border-box;
+          border: 1px solid $black;
           &::placeholder {
             font-family: 'Abel', sans-serif;
             font-size: 16px;

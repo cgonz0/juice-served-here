@@ -1,12 +1,12 @@
 @import '../styles/_variables.scss';
 
 .mainNav-mobile {
-  .menubar span {
+  .menuBar span {
     display: inline-block;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     line-height: 60px;
   }
 
@@ -42,9 +42,18 @@
     }
   }
 
-  #menu.isopen {
+  #menu.isOpen {
     -webkit-transform: none;
     transform: none;
   }
 }
 
+@media screen and (min-width: 420px) {
+  .mainNav-mobile #menu {
+    width: 280px;
+  }
+}
+
+.navOpen {
+  overflow: hidden;
+}
