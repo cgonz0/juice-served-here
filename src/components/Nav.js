@@ -43,13 +43,7 @@ class Nav extends React.Component {
       <div className="navWrap" onMouseLeave = {this.handleClose}>
         <nav className={this.state.scroll > this.state.top ? "mainNav fixed-nav" : "mainNav"}>
 
-          <div className="mainNav-mobile">
-            <NavMobile />
-            <ul>
-              <li className="logoComp-mobile"><a href="#/"><img src={logo} className="logo" alt="logo" /></a></li>
-            </ul>
-            <a href="#/"><i className="fas fa-archive"><span className="cart"> (2)</span></i></a>
-          </div>
+          <NavMobile />
 
           <div className="mainNav-lg">
             <a href="#/">Log in</a>

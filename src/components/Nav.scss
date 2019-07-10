@@ -42,26 +42,6 @@ a {
   }
 }
 
-.mainNav-mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-  ul {
-    margin: 10px;
-    padding: 0px;
-  }
-}
-
-.logoComp-mobile {
-  padding: 0 30px;
-  img.logo {
-    position: relative;
-    top: 4px;
-    height: 3rem;
-  }
-}
-
 .cart {
   font-family: 'Abel', sans-serif;
 }
@@ -94,11 +74,6 @@ a {
       top: -4px;
     }
   }
-
-  .mainNav-mobile {
-    display: none;
-  }
-
 }
 
 

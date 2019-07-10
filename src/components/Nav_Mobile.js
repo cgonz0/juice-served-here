@@ -1,5 +1,6 @@
 import React from 'react';
 import './Nav_Mobile.scss';
+import logo from '../assets/logo.png';
 
 class MenuLinks extends React.Component {
 
@@ -91,15 +92,23 @@ class NavMobile extends React.Component {
   render() {
         let menuStatus = this.state.isOpen ? 'isOpen' : '';
     return (
-      <div className="anotherdiv" ref="root">
-        {this.state.isOpen ? document.body.classList.add('navOpen') : document.body.classList.remove('navOpen')}
-        <div className="menuBar" onClick={ this._menuToggle } >
-          <div id="bars" className={ menuStatus }>
-            <a href="#/"><i className="fas fa-bars"></i></a>
+      <div className="mainNav-mobile">
+
+        <div className="anotherdiv" ref="root">
+          {this.state.isOpen ? document.body.classList.add('navOpen') : document.body.classList.remove('navOpen')}
+          <div className="menuBar" onClick={this._menuToggle}>
+            <div id="bars">
+              <a href="#/"><i className="fas fa-bars"></i></a>
+            </div>
           </div>
+          <MenuLinks menuStatus={ menuStatus }/>
         </div>
 
-        <MenuLinks menuStatus={ menuStatus }/>
+        <ul>
+          <li className="logoComp-mobile"><a href="#/"><img src={logo} className="logo" alt="logo" /></a></li>
+        </ul>
+        <a href="#/"><i className="fas fa-archive"><span className="cart"> (2)</span></i></a>
+
       </div>
     )
   }
