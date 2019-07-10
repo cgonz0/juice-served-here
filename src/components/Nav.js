@@ -8,7 +8,8 @@ class Nav extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { isOpen: false
+    this.state = {
+      isOpen: false
     };
     this.handleOpen = this.handleOpen.bind(this);
     this.handleClose = this.handleClose.bind(this);
@@ -54,7 +55,7 @@ class Nav extends React.Component {
             <a href="#/">Log in</a>
               <ul>
                 <li onMouseEnter = {this.handleOpen}><a href="#/">Shop</a></li>
-                <li onMouseEnter = {this.handleClose}><a href="#/">Cleanses</a></li>
+                <li onMouseEnter = {this.handleClose}><a href="#/">Cleanse</a></li>
                 <li onMouseEnter = {this.handleClose}><a href="#/">Build a Box</a></li>
                 <li className="logoComp"><a href="#/"><img src={logo} className="logo" alt="logo" /></a><span className="juice">JUICE </span><span className="served">Served Here</span></li>
                 <li onMouseEnter = {this.handleClose}><a href="#/">The Unconventional</a></li>

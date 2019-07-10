@@ -40,6 +40,10 @@
         padding: 20px 40px;
       }
     }
+    .sublistName {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   #menu.isOpen {

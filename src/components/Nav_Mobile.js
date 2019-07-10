@@ -2,12 +2,49 @@ import React from 'react';
 import './Nav_Mobile.scss';
 
 class MenuLinks extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      showMenu: false
+    }
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu (event) {
+    event.preventDefault();
+    this.setState({
+      showMenu: !this.state.showMenu
+    })
+  }
+
+  // toggleMenu = function() {
+  //   this.setState({ showMenu: !this.state.showMenu });
+  // }
+
   render() {
+    const {showMenu} = this.state;
     return (
         <div className={this.props.menuStatus} id='menu'>
           <ul>
-            <li><a href="#/">Shop</a></li>
-            <li><a href="#/">Cleanses</a></li>
+            <li>
+              <div className="sublistName"><a href="#/">Shop</a>
+                <div className="toggle">
+                  <div className="plus" onClick={this.toggleMenu}><i className="fas fa-plus"></i></div>
+                </div>
+              </div>
+              {showMenu === true ?
+              <ul className="sublistItems" >
+                <li><a href="#/">Drinks</a></li>
+                <li><a href="#/">Goods</a></li>
+                <li><a href="#/">Boxes</a></li>
+                <li><a href="#/">Cleanses</a></li>
+              </ul>
+              :
+              ""
+              }
+            </li>
+            <li><a href="#/">Cleanse</a></li>
             <li><a href="#/">Build a Box</a></li>
             <li><a href="#/">The Unconventional</a></li>
             <li><a href="#/">Here We Are</a></li>
