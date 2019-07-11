@@ -21,7 +21,10 @@ class Home extends React.Component {
           <div className="box">
             <div className="container">
               <h2>You buy it by the box</h2>
-              <p>Choose 7–8 products of your liking and have it delivered to your door as often as you want. You pick, every time.</p>
+              <p>Choose 7–8 products of your liking and have it delivered
+                <br/>
+                to your door as often as you want. You pick, every time.
+              </p>
               <div className="stepSection">
                 <div className="stepWrapper">
                   <div className="step">
@@ -60,14 +63,19 @@ class Home extends React.Component {
             <div className="container">
               <h1>Drinks</h1>
               <h2>Juices</h2>
-              <p>Our juices are individually crafted to flush, detoxify, hydrate and strengthen the body.</p>
+              <p>Our juices are individually crafted to flush, detoxify, hydrate
+                <br/>
+                and strengthen the body.
+              </p>
               <button className="btn-fill">View Juice Menu</button>
             </div>
           </div>
           <div className="drinksProducts">
             <div className="container">
               <h2>Pick your pleasure</h2>
-              <p>Our products are nourishing, satiating and never cut with cheap filters</p>
+              <p>Our products are nourishing, satiating and never cut
+                <br/>with cheap filters
+              </p>
               <div className="products">
                 <ul className="productImages">
                   <li>
@@ -116,6 +124,21 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+
+        <div className="cleanseSection">
+          <div className="container">
+            <h1>Cleanse</h1>
+            <h2>Drink yourself clean</h2>
+            <p>You like those cupcakes right?
+              <br/>
+              Sweet-spot for the whiskey neat? We get it.
+              <br/>
+              Time to cleanse.
+            </p>
+            <button className="btn-fill">Shop Cleanses</button>
+          </div>
+        </div>
+
       </div>
     );
   }
