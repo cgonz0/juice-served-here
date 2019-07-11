@@ -209,6 +209,7 @@ class Home extends React.Component {
                   </a>
                 </li>
               </ul>
+              <button className="btn-outline">View All Locations</button>
             </div>
           </div>
         </div>
