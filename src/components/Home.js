@@ -62,6 +62,7 @@ class Home extends React.Component {
           <div className="drinksHero">
             <div className="container">
               <h1>Drinks</h1>
+              <span className="line"></span>
               <h2>Juices</h2>
               <p>Our juices are individually crafted to flush, detoxify, hydrate
                 <br/>
@@ -128,6 +129,7 @@ class Home extends React.Component {
         <div className="cleanseSection">
           <div className="container">
             <h1>Cleanse</h1>
+            <span className="line"></span>
             <h2>Drink yourself clean</h2>
             <p>You like those cupcakes right?
               <br/>

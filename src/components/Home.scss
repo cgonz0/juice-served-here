@@ -11,6 +11,14 @@ h2 {
   font-size: 30px;
 }
 
+.line {
+  display: block;
+  width: 35px;
+  height: 1px;
+  background-color: $orange;
+  margin: 0 auto;
+}
+
 //Delivery section
 
 .deliveryHero {
