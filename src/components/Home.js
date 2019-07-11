@@ -4,6 +4,11 @@ import juice1 from '../assets/juice-1.jpg';
 import juice2 from '../assets/juice-2.jpg';
 import juice3 from '../assets/juice-3.jpg';
 import juice4 from '../assets/juice-4.jpg';
+import location1 from '../assets/location-1.jpg';
+import location2 from '../assets/location-2.jpg';
+import location3 from '../assets/location-3.jpg';
+import location4 from '../assets/location-4.jpg';
+
 
 class Home extends React.Component {
   render() {
@@ -138,6 +143,73 @@ class Home extends React.Component {
               Time to cleanse.
             </p>
             <button className="btn-fill">Shop Cleanses</button>
+          </div>
+        </div>
+
+        <div className="locationSection">
+          <div className="container">
+            <h1>Locations</h1>
+            <div className="location">
+              <ul className="locationImages">
+                <li>
+                  <a href="#/">
+                    <div className="thumb">
+                      <img src={location1} className="location-1" alt="platform location" />
+                      <div className="overlay">
+                        <p className="imgText">View Store Details</p>
+                      </div>
+                      <div className="storeInfo">
+                        <h4>Platform</h4>
+                        <p>Monday – Sunday / 7am – 8pm</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#/">
+                    <div className="thumb">
+                      <img src={location2} className="location-2" alt="dtla location" />
+                      <div className="overlay">
+                        <p className="imgText">View Store Details</p>
+                      </div>
+                      <div className="storeInfo">
+                        <h4>DTLA</h4>
+                        <p>Monday – Saturday / 7:30am – 7pm</p>
+                        <p>Sunday / 8am – 6pm</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#/">
+                    <div className="thumb">
+                      <img src={location3} className="location-3" alt="pasadena location" />
+                      <div className="overlay">
+                        <p className="imgText">View Store Details</p>
+                      </div>
+                      <div className="storeInfo">
+                        <h4>Pasadena</h4>
+                        <p>Monday – Friday / 8am – 9pm</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#/">
+                    <div className="thumb">
+                      <img src={location4} className="location-4" alt="venice location" />
+                      <div className="overlay">
+                        <p className="imgText">View Store Details</p>
+                      </div>
+                      <div className="storeInfo">
+                        <h4>Venice</h4>
+                        <p>Monday – Friday / 8am – 9pm</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

@@ -160,6 +160,61 @@ h2 {
   }
 }
 
+//Locations section
+
+.locationSection {
+  h2 {
+    margin-top: 40px;
+  }
+  .location {
+    .locationImages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .overlay {
+      .imgText {
+        display: none;
+      }
+    }
+    ul {
+      padding: 0px;
+      margin: 40px 0px;
+      li {
+        display: inline-block;
+        padding: 10px 10px 0px;
+        a {
+          text-align: left;
+          color: $orange;
+          .thumb {
+            margin-bottom: 20px;
+            .storeInfo {
+              h4 {
+                text-transform: uppercase;
+                margin: 10px 0px 5px;
+              }
+              p {
+                color: $black;
+                margin: 0px;
+              }
+            }
+          }
+          &:hover {
+            color: rgba(255,94,72, .8);
+          }
+          .thumb {
+            overflow: hidden;
+            position: relative;
+            img {
+              height: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .drinksHero {
     background-position: unset;
@@ -219,6 +274,34 @@ h2 {
     display: flex;
     .step {
       padding: 50px;
+    }
+  }
+  .location {
+    .overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: $orange;
+      text-transform: uppercase;
+      opacity: 0;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border: 1px solid $orange;
+      height: 180px;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      transition: opacity 500ms cubic-bezier(0.5, 0, 0.25, 1);
+      width: 100%;
+      box-sizing: border-box;
+      &:hover {
+        opacity: 1;
+        .imgText {
+          display: block;
+        }
+      }
     }
   }
 }
