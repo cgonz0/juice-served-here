@@ -132,6 +132,7 @@ class Home extends React.Component {
         </div>
 
         <div className="cleanseSection">
+        <div className="colorOverlayWhite"></div>
           <div className="container">
             <h1>Cleanse</h1>
             <span className="line"></span>
