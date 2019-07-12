@@ -53,9 +53,15 @@
       .sublistName {
         display: flex;
         justify-content: space-between;
-        ul.sublistItems {
-          margin-bottom: 0px !important;
+        .plus {
+          cursor: pointer;
+          &:hover {
+            color: $orange;
+          }
         }
+      }
+      ul.sublistItems {
+        margin-bottom: 0px;
       }
     }
     #menu.isOpen {

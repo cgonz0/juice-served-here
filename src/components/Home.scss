@@ -58,6 +58,10 @@ h2 {
   h2 {
     padding-top: 15px;
   }
+  p {
+    max-width: 310px;
+    margin: 0 auto;
+  }
   .stepSection {
     display: flex;
     justify-content: space-evenly;
@@ -110,12 +114,17 @@ h2 {
   height: 580px;
   p {
     margin: 20px auto 40px;
+    max-width: 400px;
   }
 }
 
 .drinksProducts {
   h2 {
     margin-top: 40px;
+  }
+  p {
+    max-width: 310px;
+    margin: 0 auto;
   }
   .products {
     ul {
@@ -162,13 +171,14 @@ h2 {
   p {
     margin-bottom: 40px;
     position: relative;
+    max-width: 430px;
   }
 }
 
 .colorOverlayWhite {
   width: 100%;
   height: 100%;
-  opacity: .7;
+  opacity: .8;
   position: absolute;
   background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 35%, rgba(255,255,255,0.6) 65%, rgba(255,255,255,0) 100%);
 }
@@ -279,11 +289,17 @@ h2 {
       color: black;
     }
   }
+  .box p {
+      max-width: 380px;
+  }
   .box .stepSection .stepWrapper {
     display: flex;
     .step {
       padding: 50px;
     }
+  }
+  .drinksProducts p {
+    max-width: 370px;
   }
   .cleanseSection {
     .colorOverlayWhite {

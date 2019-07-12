@@ -84,12 +84,14 @@
         font-size: 14px;
         color: $darkgray;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         span {
           text-transform: uppercase;
         }
         ul {
           list-style: none;
+          padding: 0px;
           li {
             display: inline-block;
             margin: 0 10px;
@@ -123,6 +125,9 @@
           padding-right: 35px;
         }
       }
+    }
+    .footer-2 .container .footerInfo {
+      flex-direction: row;
     }
   }
 }

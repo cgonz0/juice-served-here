@@ -48,7 +48,7 @@ class MenuLinks extends React.Component {
             <li><a href="#/">Cleanse</a></li>
             <li><a href="#/">Build a Box</a></li>
             <li><a href="#/">The Unconventional</a></li>
-            <li><a href="#/">Here We Are</a></li>
+            <li><a href="#/">Who We Are</a></li>
           </ul>
         </div>
       )
