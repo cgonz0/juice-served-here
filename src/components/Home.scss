@@ -34,15 +34,46 @@ h2 {
       padding-top: 60px;
       position: relative;
       color: white;
+      animation: downslide 1s ease-out;
+      transform: translateY(0%);
+      opacity: 1;
     }
     h4 {
       font-size: 18px;
       position: relative;
       color: white;
       margin-bottom: 40px;
+      animation: downslide 1s ease-out;
+      transform: translateY(0%);
+      opacity: 1;
     }
+
+    @keyframes downslide {
+      from {
+        transform: translateY(-30%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+
     .btn-fill {
-      position: relative;
+      animation: rightslide 1s ease-out;
+      transform: translateX(0%);
+      opacity: 1;
+    }
+
+    @keyframes rightslide {
+      from {
+        transform: translateX(-30%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
     }
   }
 
